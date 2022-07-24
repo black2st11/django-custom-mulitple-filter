@@ -1,6 +1,5 @@
-from random import choices
 from django_filters import rest_framework as filters
-from custom_filters.filters import MultipleFilter
+from .custom_filters import MultipleFilter
 from .models import BigCity, SmallCity, State
 
 class StateFilter(filters.FilterSet):

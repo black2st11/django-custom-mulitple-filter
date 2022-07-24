@@ -5,6 +5,7 @@ from region.models import State, BigCity, SmallCity
 from faker import Faker
 import random
 from django.db.models.query import QuerySet
+
 @pytest.fixture()
 def create_test_db(db):
     fake = Faker('ko_KR')
